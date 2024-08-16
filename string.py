@@ -64,9 +64,56 @@
 # print(a.lstrip())
 # print(a.rstrip())
 
-print("{:<16}{:<8}{:<8}".format("Name",'Age','Mark'))
-print("{:<16}{:<8}{:<8}".format("a",'22','40'))
-print("{:<16}{:<8}{:<8}".format("b",'20','39'))
-item=input("enter an item")
-price=int(input("enter price"))
-print(f"its an {item}, its price {price} rs")
+# print("{:<16}{:<8}{:<8}".format("Name",'Age','Mark'))
+# print("{:<16}{:<8}{:<8}".format("a",'22','40'))
+# print("{:<16}{:<8}{:<8}".format("b",'20','39'))
+# item=input("enter an item")
+# price=int(input("enter price"))
+# print(f"its an {item}, its price {price} rs")
+
+# a=10
+# b=10
+# if a==b:
+#     print('eql')
+# else:
+#     print('not equal')    
+
+# a=100
+# b=200
+# if a>b:
+#     print('100')
+# else:
+#     print('200')  
+
+# a='Aswathi-17'
+# b='Aswathi-20'
+# if a==b:
+#     print('Aswathi is eligible to vote')
+# else:
+#     print('Aswathi is not eligible to vote because a is still a minor')         
+
+# a=1
+# b=10
+# if a == 'an odd number':
+#     print('1 is an odd no.')
+# else:
+#     print('1 is not an odd no.') 
+
+
+# if a == 'an even number':
+#     print('1 is an even no.')
+# else:
+#     print('1 is not an even no.')    
+
+
+
+# if a =='an even number':
+#     print('10')
+# else:
+#     print('10 is not an even no.')  
+
+# if a =='is an odd number':
+#     print('10 is odd no.')
+# else:
+#     print('10 is not an odd no.') 
+   
