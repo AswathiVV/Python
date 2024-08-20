@@ -77,16 +77,70 @@
 #     x+=1
 
 
-i=int(input("Enter Starting Value :" ,"Enter Starting Value :"))
-e=int(input("Enter Ending Value :" ,"Enter Ending Value :"))
-sum=0
-while i<=e and i<=e:
-    if i%2==0 and i%2!=0:
-        sum+=i and sum+i
-    i+=1 and i+1
-print('sum: ',sum) and ('sum: ',sum)
+# i=int(input("Enter Starting Value :"))
+# e=int(input("Enter Ending Value :" ))
+# sum=0
+# odd_sum=0
+# normal_sum=0
+# while i<=e:
+#     normal_sum+=i
+#     if i%2==0:
+#         sum+=i
+#     else:
+#         odd_sum+=1
+#     i+=1
+# print('sum: ',sum) 
+# print('odd_sum: ',odd_sum)
+# print('normal_sum: ',normal_sum)
 
 
+# i=1
+# e=int(input("Enter Ending Value :"))
+# Factorial=1
+# while i<=e:
+#     Factorial*=i
+#     i+=1
+# print('Factorial_sum:',Factorial)
+
+
+# a=int(input("Enter a no. :"))
+# while a>0:
+#     d=a%10
+#     print(d)
+#     a//=10
+
+# a=int(input("Enter a no. :"))
+# rev=0
+# while a>0:
+#     d=a%10
+#     rev=rev*10+d
+#     a//=10
+# print(rev)
+
+# a=int(input("Enter a no. :"))
+# rev=0
+# while a>0:
+#     d=a%10
+#     rev=rev+d
+#     a//=10
+# print(rev)
 
 
      
+# a=input('str:')
+# l=len(a)
+# i=0
+# while i<l:
+#     print(a[i])
+#     i+=1
+
+a=input('str:')
+l=len(a)
+i=0
+rev=''
+while i<l:
+    rev=a[i]+rev
+    i+=1
+print(rev)
+
+
