@@ -134,13 +134,88 @@
 #     print(a[i])
 #     i+=1
 
-a=input('str:')
-l=len(a)
-i=0
-rev=''
-while i<l:
-    rev=a[i]+rev
-    i+=1
-print(rev)
+# a=input('str:')
+# l=len(a)
+# i=0
+# rev=''
+# while i<l:
+#     rev=a[i]+rev
+#     i+=1
+# print(rev)
+
+# for i in range (1,10):
+#     print(i)
+ 
+# for i in range(3,100,3):
+#     print(i)
+
+# for i in range(5):
+#     print('welcome')
+
+# start=int(input("Enter Starting Value:"))
+# end=int(input("Enter Ending Value :"))
+# sum=0
+# for i in range(start,end+1):
+#     sum+=i
+# print(sum)    
+
+# end=int(input("Enter a Value :"))
+# rev=0
+# for i in range (rev*10+(end%10)):
+#         print(rev)
 
 
+# i=int(input("Enter Starting Value :"))
+# e=int(input("Enter Ending Value :" ))
+# sum=0
+# odd_sum=0
+# normal_sum=0
+# while i<=e:
+#     normal_sum+=i
+#     if i%2==0:
+#         sum+=i
+#     else:
+#         odd_sum+=i
+#     i+=1
+# print('sum: ',sum) 
+# print('odd_sum: ',odd_sum)
+# print('normal_sum: ',normal_sum)
+# a=int(input("Enter Starting Value :"))
+# e=int(input("Enter Ending Value :" ))
+# sum=0
+# odd_sum=0
+# normal_sum=0
+# for i in range(a,e+1):
+#     normal_sum+=i
+#     if i%2==0:
+#         sum+=i
+#     else:
+#         odd_sum+=i
+
+# print('sum: ',sum) 
+# print('odd_sum: ',odd_sum)
+# print('normal_sum: ',normal_sum)
+
+
+# e=int(input("Enter Ending Value :"))
+# factorial=1
+# for i in range(1,e+1):
+#     factorial*=i
+# print('factorial_sum',factorial)    
+
+# e=int(input("Enter a Value :"))
+
+# for i in range(1,11):
+#     print(i,'*',e,'=',i*e)
+
+
+# a=input("Enter a string :")
+# rev=''
+# for i in a:
+#     rev=i+rev
+# print(rev)    
+
+
+a=input("Enter a string :")
+for i in a:
+    print(i)  
