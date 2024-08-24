@@ -216,6 +216,69 @@
 # print(rev)    
 
 
-a=input("Enter a string :")
-for i in a:
-    print(i)  
+# a=input("Enter a string :")
+# for i in a:
+#     print(i)  
+
+
+# for i in range(4):
+#     print('i=',i)
+#     for j in range(3):
+#         print('/t j=',j)
+
+# for i in range(5):
+#     for j in range(5):
+#         print(j,end="\t")
+#     print()    
+
+# for i in range(5):
+#     a=10
+#     for j in range(4):
+#         print(a,end="\t")
+#         a+=1
+#     print()    
+
+# for i in range(3):
+#     for j in range(1):
+#      print(i,end="") 
+#     print(i+1,end="")  
+#     print(i+2,end="")  
+
+#     print()     
+
+# for i in range(3):
+#     for j in range(3):
+#      print(i,end="\t") 
+#      i+=1
+     
+     
+
+#     print()  
+
+# a=0
+# for i in range(3):
+#     for i in range(3):
+#         print(a,end="")
+#         a+=1
+#     print()    
+
+a=0
+
+
+
+# for i in range(4):
+#     if i%2==0:
+#         for j in range(3):
+#             print(j,end="")
+#     else:
+#         for j in range(3):
+#             print(2-j,end="")
+#     print() 
+
+'''0 1 2
+   2 1 0
+   0 1 2
+   2 1 0'''        
+        
+   
+    
