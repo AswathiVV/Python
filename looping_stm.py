@@ -262,7 +262,7 @@
 #         a+=1
 #     print()    
 
-a=0
+# a=0
 
 
 
@@ -281,4 +281,121 @@ a=0
    2 1 0'''        
         
    
+'''0 1 4
+   0 1 4
+   9 16 25
+   9 16 25'''
+
+
+
+
+
+# for i in range(4):
+#    for j in range(3):
+#     if i < 2:
+#         value = [0, 1, 4]
+#         print(i, end=' ')
+#     else:
+#         value = [9, 16, 25]
+#         print(i, end=' ')
+#     print() 
+# Loop through the number of rows
+# for i in range(4):
     
+#     if i < 2:
+#         a= 0 if i == 0 else 1
+#     else:
+#         a=9
+    
+#     for j in range(3):
+        
+#         print(a + j * j, end=' ')
+#     print()
+
+
+# for i in range(4):
+    
+   #  if i < 2:
+   #      base = 0
+   #      increments = [0, 1, 4]
+   #  else:
+   #      base = 9
+   #      increments = [0, 1, 4]
+
+    
+   #  for j in range(3):
+   #      print(base + increments[j] ** 2, end=' ')
+    
+    
+   #  print()
+
+# for i in range(4):
+#     for j in range(3):
+#          if i < 2:
+#           a= 0
+#          print(a+ j * j, end=' ')
+#     else:
+#         a= 9
+#     print()
+
+
+'''1 3 5
+   7 9 11
+   13 15 17'''
+# a=1
+# for i in range(3):
+#     for i in range(3):
+#         print(a,end="\t")
+#         a+=2
+#     print()  
+# 
+
+
+'''A B C
+   A B C
+   A B C''' 
+
+# a="A B C"
+# for i in range(3):
+#     for j in range(1):
+      
+#          print(a)
+        
+#     print()  
+
+'''1
+   2 3
+   4 5 6
+   7 8 9 10'''
+
+# start = 1
+# for i in range(1, 5): 
+#     for j in range(i):
+#         print(start, end=' ')
+#         start += 1
+#     print()
+
+'''1
+   2 1
+   3 2 1
+   4 3 2 1'''
+
+# for i in range(1, 5):  
+#     for j in range(i, 0, -1):  
+#         print(j, end=' ')
+#     print()
+
+
+'''5 # #
+   # 5 #
+   # # 5'''
+
+# for i in range(3):
+#     for j in range(3):
+#         if i == j:
+#             print('5', end=' ')
+#         else:
+#             print('#', end=' ')
+    
+#     print()
+
