@@ -353,26 +353,28 @@
 
 '''A B C
    A B C
-   A B C''' 
+   A B C
+   
+   65 66 67
+   65 66 67
+   65 66 67''' 
 
-# a="A B C"
 # for i in range(3):
-#     for j in range(1):
-      
-#          print(a)
-        
-#     print()  
+#     a=65
+#     for j in range(3):
+#         print(chr(a+j),end="")
+#     print()    
 
 '''1
    2 3
    4 5 6
    7 8 9 10'''
 
-# start = 1
-# for i in range(1, 5): 
+# start=1
+# for i in range(1,5): 
 #     for j in range(i):
 #         print(start, end=' ')
-#         start += 1
+#         start+= 1
 #     print()
 
 '''1
@@ -380,10 +382,10 @@
    3 2 1
    4 3 2 1'''
 
-# for i in range(1, 5):  
-#     for j in range(i, 0, -1):  
-#         print(j, end=' ')
-#     print()
+# for i in range(1,5):
+#     for j in range(i):
+#         print(i-j,end=" ")
+#     print()    
 
 
 '''5 # #
@@ -392,10 +394,74 @@
 
 # for i in range(3):
 #     for j in range(3):
-#         if i == j:
+#         if i==j:
 #             print('5', end=' ')
 #         else:
 #             print('#', end=' ')
     
 #     print()
 
+'''A
+   A B
+   A B C'''
+
+# for i in range(1,4):
+#    a=65
+#    for j in range(i):
+#        print(chr(a+j),end="\t")
+#    print()    
+ 
+'''A 
+   B A
+   C B A'''
+       
+# a=64
+# for i in range(1,4):
+#     for j in range(i):
+#         print(chr((a+i)-j),end=" ")
+      
+#     print()   
+    
+
+'''A
+   B B
+   C C C''' 
+
+# method-1
+
+# a=65
+# for i in range(1,4):
+#    for j in range(i):
+#        print(chr(a),end="") 
+#    print()
+#    a+=1
+
+# Method-2
+
+# a=64
+# for i in range(1,4):
+#    for j in range(i):
+#        print(chr(a+i),end="") 
+#    print()
+   
+'''0 1 2
+   A B C
+   0 1 2
+   A B C'''
+# a=65
+# for i in range(4):
+#     if i%2==0:
+#         for j in range(3):
+#             print(j,end=" ")
+#     else:
+#         for j in range(3):
+#             print(chr(a+j),end=" ")
+#     print() 
+
+'''  * *
+     * * * *
+     *
+     * * *    '''
+# l=[2,4,1,3]
+# for i in l:
+#     print('*'*i)
