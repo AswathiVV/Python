@@ -134,19 +134,17 @@
    Even numbers: [2, 4, 6, 8]'''
 
 # l=[1,2,3,4,5,6,7,8]
-# l = [1, 2, 3, 4, 5, 6, 7, 8]
-
-# odd = []
-# even= []
+# sum=0
 
 # for i in l:
 #     if i % 2 == 0:
-#         even.append(i)
-#     else:
-#         odd.append(i)
+        
+#        sum+=i
+#     print(i)
+        
 
-# print("Odd numbers:", odd)
-# print("Even numbers:", even)
+# print(sum)
+
 
 '''Sum : 36'''
 # l = [1, 2, 3, 4, 5, 6, 7, 8]
@@ -155,4 +153,131 @@
 #        sum += i
 # print("Sum :",sum)
 
+
+'''emoclew
+   nohtyp
+   olleh'''
+
+# l=['welcome','python','hello']
+# for i in l:
+#     print(i[::-1])
+
+
+'''Sum : 18.8'''
+
+# l=[1,10,5.8,'abc',2]     
+# sum = 0
+# for i in l:
+#        if type(i)==(int) or type(i)==float:
+#         sum += i
+# print("Sum :",sum)
+
+
+'''[5,8,1,2,3]'''
+
+# l=[5,8,5,1,2,3,8,5]
+# l1=[]
+# for i in l:
+#     if i not in l1:
+#         l1.append(i)
+# print(l1)   
+# 
+
+'''Enter limit : 5
+Enter Name :A
+Enter Name :B
+Enter Name :C
+Enter Name :D
+Enter Name :E
+['A', 'B', 'C', 'D', 'E']'''
+# names=[]
+# limit=int(input('Enter limit : '))     
+# for i in range(limit):
+#     name=input("Enter Name :")
+#     names.append(name)
+# print(names)    
+
+
+'''Enter limit : 2
+   Enter Name :Ammu
+   Enter Age :21
+   Enter Mark :50
+   Enter Name :Aswathi
+   Enter Age :23
+   Enter Mark :49
+   [['Ammu', 21, 50], ['Aswathi', 23, 49]]'''
+
+# std=[]
+# limit=int(input('Enter limit : '))     
+# for i in range(limit):
+#     name=input("Enter Name :")
+#     age= int(input("Enter Age :"))
+#     mark=int(input("Enter Mark :"))
+#     std.append([name,age,mark])
+# print(std)  
+
+
+'''
+1.Add STD
+2.View STD
+3.Update STD
+4.Delete STD
+      
+Enter Your Choice :1
+Enter Name :Aswathi
+Enter Age :20
+Enter Mark :70
+
+1.Add STD
+2.View STD
+3.Update STD
+4.Delete STD
+      
+Enter Your Choice :2
+name      age  mark 
+____________________
+Aswathi   20   70   
   
+
+1.Add STD
+2.View STD
+3.Update STD
+4.Delete STD
+      
+Enter Your Choice :3
+
+1.Add STD
+2.View STD
+3.Update STD
+4.Delete STD
+      
+Enter Your Choice :4
+
+1.Add STD
+2.View STD
+3.Update STD
+4.Delete STD
+      
+Enter Your Choice : '''
+
+# std=[]
+# while True:
+#     print('''
+# 1.Add STD
+# 2.View STD
+# 3.Update STD
+# 4.Delete STD
+#       ''')
+#     choice=int(input("Enter Your Choice :"))
+#     if choice==1:
+#         name=input("Enter Name :")
+#         age= int(input("Enter Age :"))
+#         mark=int(input("Enter Mark :"))
+#         std.append([name,age,mark])
+#     elif choice==2:
+#         print('{:<10}{:<5}{:<5}'.format('name','age','mark'))  
+#         print('_'*20)  
+#         for i in std:
+#              print('{:<10}{:<5}{:<5}'.format(i[0],i[1],i[2]))
+            
+        
