@@ -280,4 +280,59 @@ Enter Your Choice : '''
 #         for i in std:
 #              print('{:<10}{:<5}{:<5}'.format(i[0],i[1],i[2]))
             
-        
+std=[]
+while True:
+    print('''
+1.Add STD
+2.View STD
+3.Update STD
+4.Delete STD
+5.Search
+6.Exit                    
+      ''')
+    choice=int(input("Enter Your Choice :"))
+    if choice==1:
+        name=input("Enter Name :")
+        age= int(input("Enter Age :"))
+        mark=int(input("Enter Mark :"))
+        std.append([name,age,mark])
+    elif choice==2:
+        print('{:<10}{:<5}{:<5}'.format('name','age','mark'))  
+        print('_'*20)  
+        for i in std:
+             print('{:<10}{:<5}{:<5}'.format(i[0],i[1],i[2]))
+    elif choice==3:
+         name=input('Enter Name :') 
+         f=0
+         for i in std:
+            if i[0]==name:
+               mark=int(input("Enter New Mark :")) 
+               i[2]=mark
+               f=1
+         if f==0:
+               print('Name Not In List')  
+    elif choice==4:
+         name=input('Enter Name :') 
+         f=0
+         for i in std:
+            if i[0]==name:
+               std.remove(i)
+               f=1
+         if f==0:
+               print('Name Not In List')
+    elif choice==5:
+         name=input('Enter Name :') 
+         f=0
+         for i in std:
+            if i[0]==name:
+               print(i)
+               f=1
+         if f==0:
+               print('Name Not In List')               
+    elif choice==6: 
+        break
+    else:
+        print("Invalid Choice")           
+   
+  
+                    
