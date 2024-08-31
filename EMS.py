@@ -1,4 +1,8 @@
+import datetime
+print(datetime.datetime.now().strftime("%x"))
 ems=[]
+
+
 while True:
     print('''
 1.Registration
@@ -6,7 +10,9 @@ while True:
 3.Update Employee Deatails
 4.Delete Employee Deatails
 5.Search
-6.Add Task                    
+6.Add Task
+7.View Task
+8.Exit                                        
       ''')
     choice=int(input("Enter Your Choice :"))
     if choice==1:
@@ -27,15 +33,33 @@ while True:
          f=0
          for i in ems:
             if i[0]==id:
-               age=int(input("Enter Your Age :"))
-               salary=int(input("Enter Your Salary :"))
-               position=input("Enter Your Position :")
-               experience=int(input("Enter Your Experience :")) 
-               i[2]=age
-               i[3]=salary
-               i[4]=position
-               i[5]=experience
                f=1
+               while True:
+                   print('''
+1.Age
+2.Salary
+3.Position 
+4.Experience
+5.Exit       
+ ''')
+                   sub_ch=int(input("Enter Your Choice For Update :"))
+                   if sub_ch==1:
+                       new_age=int(input("New Age :"))
+                       i[2]=new_age
+                   elif sub_ch==2:
+                       new_salary=int(input("New Salary :"))
+                       i[3]=new_salary  
+                   elif sub_ch==3:
+                       new_position=input("New Position :")
+                       i[4]=new_position    
+                   elif sub_ch==4:
+                       new_experience=int(input("New Experience :"))
+                       i[5]=new_experience
+                   elif sub_ch==5:
+                       break
+                          
+                       
+
          if f==0:
                print('ID Not Found')           
     elif choice==4:
@@ -55,4 +79,26 @@ while True:
                print(i)
                f=1
          if f==0:
-               print('ID Not Found')            
+               print('ID Not Found')  
+    elif choice==6:
+        id=int(input("Enter ID :"))
+        f=0
+        for i in ems :
+            if i[0]==id:
+                f=1
+                task=input("Enter Task :")  
+                date=datetime.datetime.now().strftime("%x")
+                i.append([task,date])
+
+        if f==0:
+               print('ID Not Found') 
+    elif choice==7:
+        print('{:<10}{:<10}{:<10}{:<10}'.format('id','name','task','date'))  
+        print('_'*50)  
+        for i in ems:
+            if len(i)>6:
+                print('{:<10}{:<10}{:<10}{:<10}'.format(i[0],i[1],i[6][0],i[6][1]))
+    elif choice==8:
+        break
+    else:
+        print("Invalid Choice")                          
