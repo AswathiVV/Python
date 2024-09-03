@@ -129,13 +129,14 @@
 # B=[]
 # A=[]
 # for i in std:
-#     if i['age']>=30:
-#         A.append(i)
+#     if i['age']<=30:
+#         B.append(i)
 #     else:
-#         B.append(i) 
-# # print(A)
-# # print(B)
-# print('age >=30 ')
+#         A.append(i) 
+# print(A)
+# print(B)
+
+# print('age <=30 ')
 # print('{:<10}{:<5}'.format('name','age'))  
 # print('_'*20)  
 # for i in B:
@@ -149,7 +150,7 @@
     
 
 
-# print('age <=30 ')
+# print('age >=30 ')
 # print('{:<10}{:<5}'.format('name','age'))  
 # print('_'*20)  
 # for i in A:
@@ -164,23 +165,20 @@
 
 
 # dict={}
-
-
 # a=int(input("Enter A No. :"))
-
-# for i in range ((a+1)):
+# for i in range (a+1):
 #     dict[i]=i*i
 # print(dict)
 
 
-dict={}
-a=int(input("Enter a no. :"))
-for i in range(a+1):
-    if i%2==0:
-        dict[i]=i*i
-    else:
-        dict[i]=i*i*i
-print(dict)           
+# dict={}
+# a=int(input("Enter a no. :"))
+# for i in range(a+1):
+#     if i%2==0:
+#         dict[i]=i*i
+#     else:
+#         dict[i]=i*i*i
+# print(dict)           
    
 
 
