@@ -171,6 +171,16 @@
 # for i in range ((a+1)):
 #     dict[i]=i*i
 # print(dict)
+
+
+dict={}
+a=int(input("Enter a no. :"))
+for i in range(a+1):
+    if i%2==0:
+        dict[i]=i*i
+    else:
+        dict[i]=i*i*i
+print(dict)           
    
 
 
