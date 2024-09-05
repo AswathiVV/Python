@@ -1,5 +1,5 @@
-# import datetime
-# print(datetime.datetime.now().strftime("%x"))
+import datetime
+print(datetime.datetime.now().strftime("%x"))
 
 pdt=[]
 while True:
@@ -17,8 +17,9 @@ while True:
         qty=int(input("Quantity Of Product :"))
         cost=int(input("Cost Of Product :"))
         pay=input("Modes Of Payment :")
+        date=datetime.datetime.now().strftime("%x")
         
-        pdt.append({'name':name,'qty':qty,'cost':cost,'pay':pay})
+        pdt.append({'name':name,'qty':qty,'cost':cost,'pay':pay,'date':date})
     elif ch==2:
         name=input("Name Of Product :") 
         f=0
@@ -55,10 +56,10 @@ while True:
         if f==0:
             print("Product Name Not Found")                     
     elif ch==4:
-        print('{:<10} {:<5}{:<10}'.format('name','qty','cost'))  
+        print('{:<10} {:<5}{:<10}'.format('name','qty','cost','date'))  
         print('_'*30)
         for i in pdt:
-             print('{:<10} {:<5}{:<10}'.format(i['name'],i['qty'],i['cost']))
+             print('{:<10} {:<5}{:<10}'.format(i['name'],i['qty'],i['cost'],i['date']))
     elif ch==5:
         name=input("Name Of Product :")
         f=0
@@ -72,6 +73,28 @@ while True:
         break
     else:
         print("Invalid Choice")
+
+
+
+
+
+# n=int(input("Enter A No. :"))
+# numbers={0:'zero',1:'one',2:'two',3:'three',4:'four',5:'five,',6:'six',7:'seven',8:'eight',9:'nine'}
+# s=''
+# while n>0:
+#     d=n%10
+#     s=numbers[d]+' '+s
+#     n//=10
+# print(s)   
+
+# l= [{'name':'a','age':20,'lang':['mal','eng']}]
+# l[0]['lang'].append('tamil')
+# l[0]['lang'].pop()
+# print(l)
+
+
+
+
 
 
 
