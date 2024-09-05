@@ -17,8 +17,8 @@ while True:
         qty=int(input("Quantity Of Product :"))
         cost=int(input("Cost Of Product :"))
         pay=input("Modes Of Payment :")
-        date=int(input("Date Of Purchase :"))
-        pdt.append({'name':name,'qty':qty,'cost':cost,'pay':pay,'date':date})
+        
+        pdt.append({'name':name,'qty':qty,'cost':cost,'pay':pay})
     elif ch==2:
         name=input("Name Of Product :") 
         f=0
@@ -29,9 +29,8 @@ while True:
                     print('''
 1.Quantity
 2.Cost
-3.Date Of Purchase
-4.Mode Of payment
-5.Exit                                                                             
+3.Mode Of payment
+4.Exit                                                                             
 ''') 
                     sub_ch=int(input("Enter Your Choice For Updation :"))
                     if sub_ch==1:
@@ -41,10 +40,8 @@ while True:
                         new_cost=int(input("Enter New Cost :"))
                         i['cost']=new_cost 
                     elif sub_ch==3:
-                        date=int(input("Date Of Purchase :"))
+                        pay=input("Modes Of Payment:")    
                     elif sub_ch==4:
-                            
-                    elif sub_ch==5:
                         break         
         if f==0:
             print('Product Name Not Found')    
@@ -58,10 +55,10 @@ while True:
         if f==0:
             print("Product Name Not Found")                     
     elif ch==4:
-        print('{:<10} {:<5}{:<10}'.format('name','qty','cost','date'))  
+        print('{:<10} {:<5}{:<10}'.format('name','qty','cost'))  
         print('_'*30)
         for i in pdt:
-             print('{:<10} {:<5}{:<10}'.format(i['name'],i['qty'],i['cost'],i['date']))
+             print('{:<10} {:<5}{:<10}'.format(i['name'],i['qty'],i['cost']))
     elif ch==5:
         name=input("Name Of Product :")
         f=0
