@@ -2,6 +2,7 @@ import datetime
 print(datetime.datetime.now().strftime("%x"))
 lib=[]
 mem=[]
+borrowed_books=[]
 
 while True:
     print('''
@@ -10,7 +11,7 @@ while True:
 3.Update Books
 4.Remove Books
 5.Register or View Members
-6.Book (Borrow/Return/Overdue)
+6.Book (Borrow/Return/Status)
 7.Search 
 8.Exit                        
        ''')
@@ -96,45 +97,81 @@ while True:
                                 print('{:<15}{:<30}{:<10}{:<15}'.format(i[0],i[1],i[2],i[3]))
                     elif sub_ch==3:
                         break 
-    elif choice==6:
-         while True:
-                    print('''
-1.Borrow Book
-2.Return Book                                  
-3.Exit                                                                  
+    elif choice == 6:
+        while True:
+            print('''
+1. Borrow Book
+2. Return Book
+3. Check Book Status
+4. Exit                                                                  
 ''')
-                    sub_ch=int(input("Enter Your Choice For Update :"))
-                    if sub_ch==1:
-                         f=0
-                         for i in mem:
-                              id=int(input("Enter Member ID :"))
-                              if i[1]==id:
-                                   print(i)
-                                   f=1
-                         if f==0:
-                          print("Id Not Found")
+            sub_ch = int(input("Enter Your Choice: "))
+            
+            if sub_ch == 1:
+                member_id = int(input("Enter Member ID: "))
+                f=0
+                
+                
+                for i in mem:
+                    if i[2] == member_id:
+                        f=1
+                        break
+                
+                if f==0:
+                    print("Member ID Not Found")
+                    continue
 
-                         for i in lib:   
-                              id=int(input("Enter Book ID :"))
-                              if i[1]==id:
-                                   print(i)
-                                   f=1
-                                   title=input("Book Title :")
-                                   id=int(input("ID :"))
-                                   borrow_date=datetime.datetime.now().strftime("%x")
-                                   lib.append([title,id,borrow_date])
-                         if f==0:
-                          print("Id Not Found")
-                         
-                            
-
-                    elif sub_ch==2:
-                              title=input("Book Title :")
-                              id=int(input("ID :"))
-                              return_date=datetime.datetime.now().strftime("%x")
-                              lib.append([title,id,return_date])
-                    elif sub_ch==3:
-                         break
+                book_id = int(input("Enter Book ID: "))
+                f=0
+                
+               
+                for i in lib:
+                    if i[1] == book_id:
+                        f=1
+                        book_title = i[0]
+                        break
+                
+                if f==0:
+                    print("Book ID Not Found")
+                    continue
+                
+                
+                borrow_date = datetime.datetime.now().strftime("%x")
+                borrowed_books.append([book_title, book_id, member_id, borrow_date])
+                print(f"Book '{book_title}' borrowed successfully on {borrow_date}")
+            
+            elif sub_ch == 2:
+                book_id = int(input("Enter Book ID: "))
+                f=0
+                
+                
+                for b in borrowed_books:
+                    if b[1] == book_id:
+                        f=1
+                        borrowed_books.remove(b)
+                        return_date = datetime.datetime.now().strftime("%x")
+                        print(f"Book '{b[0]}' returned successfully on {return_date}")
+                        break
+                
+                if f==0:
+                    print("Book ID Not Found or Book Not Borrowed")
+            
+            elif sub_ch == 3:
+                book_id = int(input("Enter Book ID: "))
+                f=0
+                
+                
+                for b in borrowed_books:
+                    if b[1] == book_id:
+                        f=1
+                        print(f"Book ID {book_id} is borrowed by Member ID {b[2]} on {b[3]}")
+                        break
+                
+                if f==0:
+                    print("Book ID Not Found or Book Not Borrowed")
+            
+            elif sub_ch == 4:
+                break
     elif choice==7:
          id=int(input('Enter ID :')) 
          f=0
