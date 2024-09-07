@@ -105,10 +105,28 @@ while True:
 ''')
                     sub_ch=int(input("Enter Your Choice For Update :"))
                     if sub_ch==1:
-                              title=input("Book Title :")
-                              id=int(input("ID :"))
-                              borrow_date=datetime.datetime.now().strftime("%x")
-                              lib.append([title,id,borrow_date])
+                         f=0
+                         for i in mem:
+                              id=int(input("Enter Member ID :"))
+                              if i[1]==id:
+                                   print(i)
+                                   f=1
+                         if f==0:
+                          print("Id Not Found")
+
+                         for i in lib:   
+                              id=int(input("Enter Book ID :"))
+                              if i[1]==id:
+                                   print(i)
+                                   f=1
+                                   title=input("Book Title :")
+                                   id=int(input("ID :"))
+                                   borrow_date=datetime.datetime.now().strftime("%x")
+                                   lib.append([title,id,borrow_date])
+                         if f==0:
+                          print("Id Not Found")
+                         
+                            
 
                     elif sub_ch==2:
                               title=input("Book Title :")
