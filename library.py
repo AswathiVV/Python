@@ -115,11 +115,11 @@ while True:
                 for i in mem:
                     if i[2] == member_id:
                         f=1
-                        break
+                        
                 
                 if f==0:
                     print("Member ID Not Found")
-                    continue
+                    
 
                 book_id = int(input("Enter Book ID: "))
                 f=0
@@ -129,11 +129,11 @@ while True:
                     if i[1] == book_id:
                         f=1
                         book_title = i[0]
-                        break
+                        
                 
                 if f==0:
                     print("Book ID Not Found")
-                    continue
+                    
                 
                 
                 borrow_date = datetime.datetime.now().strftime("%x")
@@ -151,7 +151,7 @@ while True:
                         borrowed_books.remove(b)
                         return_date = datetime.datetime.now().strftime("%x")
                         print(f"Book '{b[0]}' returned successfully on {return_date}")
-                        break
+                        
                 
                 if f==0:
                     print("Book ID Not Found or Book Not Borrowed")
@@ -165,7 +165,7 @@ while True:
                     if b[1] == book_id:
                         f=1
                         print(f"Book ID {book_id} is borrowed by Member ID {b[2]} on {b[3]}")
-                        break
+                        
                 
                 if f==0:
                     print("Book ID Not Found or Book Not Borrowed")
