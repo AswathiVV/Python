@@ -169,34 +169,34 @@
 {1, 2, 3, 6, 7}'''
 
 
-php=set()
-e=int(input("Enter a no :"))
-for i in range(e):
-    s=input("Enter Name ")
-    php.add(s)
-print("php =",php)
+# php=set()
+# e=int(input("Enter a no :"))
+# for i in range(e):
+#     s=input("Enter Name ")
+#     php.add(s)
+# print("php =",php)
 
-python=set()
-e=int(input("Enter a no :"))
-for i in range(e):
-    s=input("Enter Name ")
-    python.add(s)
-print("python =",python)
+# python=set()
+# e=int(input("Enter a no :"))
+# for i in range(e):
+#     s=input("Enter Name ")
+#     python.add(s)
+# print("python =",python)
 
-java=set()
-e=int(input("Enter a no :"))
-for i in range(e):
-    s=input("Enter Name ")
-    java.add(s)
-print("java =",java)
+# java=set()
+# e=int(input("Enter a no :"))
+# for i in range(e):
+#     s=input("Enter Name ")
+#     java.add(s)
+# print("java =",java)
 
 # data=php.intersection(python)
 # data1=java.intersection(data)
 # print(data1)
 
-data=python.difference(php)
-data1=python.difference(java)
-print(data1)
+# data=python.difference(php)
+# data1=python.difference(java)
+# print(data1)
 
 
 
