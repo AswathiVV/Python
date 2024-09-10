@@ -87,5 +87,35 @@ welcome
 12'''
 
 
+# arguments & parameters
+
+# positional argument
+
+# def dlts(name,age):
+#     print('name',name)
+#     print('age',age)
+# dlts('anu',20)
+# dlts('manu',20)
+'''
+name anu
+age 20
+name manu
+age 20'''   
+
+# function with keyword argument
+
+# def dlts(name,age):
+#     print('name',name)
+#     print('age',age)
+# dlts(age=20,name='anu')
+'''
+name anu
+age 20'''
+
+
+    
+
+
+
 
 
