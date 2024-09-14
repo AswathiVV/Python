@@ -169,34 +169,58 @@
 {1, 2, 3, 6, 7}'''
 
 
-php=set()
-e=int(input("Enter a no :"))
-for i in range(e):
-    s=input("Enter Name ")
-    php.add(s)
-print("php =",php)
+# php=set()
+# e=int(input("Enter a no :"))
+# for i in range(e):
+#     s=input("Enter Name ")
+#     php.add(s)
+# print("php =",php)
 
-python=set()
-e=int(input("Enter a no :"))
-for i in range(e):
-    s=input("Enter Name ")
-    python.add(s)
-print("python =",python)
+# python=set()
+# e=int(input("Enter a no :"))
+# for i in range(e):
+#     s=input("Enter Name ")
+#     python.add(s)
+# print("python =",python)
 
-java=set()
-e=int(input("Enter a no :"))
-for i in range(e):
-    s=input("Enter Name ")
-    java.add(s)
-print("java =",java)
+# java=set()
+# e=int(input("Enter a no :"))
+# for i in range(e):
+#     s=input("Enter Name ")
+#     java.add(s)
+# print("java =",java)
 
 # data=php.intersection(python)
 # data1=java.intersection(data)
 # print(data1)
 
-data=python.difference(php)
-data1=python.difference(java)
-print(data1)
+# data=python.difference(php)
+# data1=python.difference(java)
+# print(data1)
+
+
+
+# s={1,2,3,4,5}
+# s1={1,2,3,6,8}
+# print(s.isdisjoint(s1))
+
+
+# t = (5, 10, 15, 20, 25)
+# print(t[2])                # Output: 15
+# print(t[:3])               # Output: (5, 10, 15)
+# print(t.count(10))         # Output: 1
+
+# l=[1,2,3,2,2,2,4,]
+# e=l.count(2)
+# print(e)
+# numbers = [3, 5, 7, 5, 9, 5, 1]
+# n=numbers.count(5)
+# print(n)
+
+items = ['apple', 'banana', 'apple', 'orange', 'banana', 'apple']
+s=set(items)
+print(s)
+
 
 
 
