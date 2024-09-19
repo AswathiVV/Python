@@ -44,8 +44,8 @@ def add_book():
         id=bk[-1]['id']+1
      print(id)
      name=input("Enter Name :")
-     stock=int(input("Enter User Name :"))
-     price=int(input("Enter User Name :"))
+     stock=input("Stock :")
+     price=int(input("Price :"))
      bk.append({'id':id,'name':name,'stock':stock,'price':price})
      print(bk)
 def view_book():
@@ -60,11 +60,12 @@ def update_book():
         if i['id']==id:
             f1=1
             name=input("Enter Your Name :")  
-            stock=int(input("Enter Your Age :"))  
-            price=int(input("Enter Your Salary :"))
+            stock=int(input("Stock :"))  
+            price=int(input("Price :"))
             i['name']=name
             i['stock']=stock
             i['price']=price
+            print("UPDATED SUCCESSFULLY")
            
     if f1==0:
         print("INVALID ID") 
@@ -76,6 +77,7 @@ def delete_book():
         if i['id']==id:
             f1=1
             bk.remove(i)
+            print("ID REMOVED SUCCESSFULLY")
      if f1==0:
          print("INVALID ID")          
 
@@ -94,8 +96,6 @@ while True:
        
         register()  
     elif choice==2:
-
-       
         f,user= login()
         if f==1:
             while True:
@@ -114,7 +114,9 @@ while True:
                 elif sub_ch==3:  
                     update_book()  
                 elif sub_ch==4:
-                    delete_book()      
+                    delete_book()
+                elif sub_ch==4:
+                    print(mem)           
 
 
 
