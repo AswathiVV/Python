@@ -33,6 +33,8 @@ def login():
         if uname==i['email'] and password==i['password']:
          f=2
          user=i
+    if f==0:
+        print("INVALID USERNAME OR PASSWORD")     
         
     return f,user
 
@@ -79,7 +81,12 @@ def delete_book():
             bk.remove(i)
             print("ID REMOVED SUCCESSFULLY")
      if f1==0:
-         print("INVALID ID")          
+         print("INVALID ID")       
+def view_users():
+     print('{:<10}{:<10}{:<10}{:<10}{:<10}{:<10}{:<10}'.format('id','email','name','address','dob','phone','password'))  
+     print('_'*100)
+     for i in mem:
+         print('{:<10}{:<10}{:<10}{:<10}{:<10}{:<10}{:<10}'.format(i['id'],i['email'],i['name'],i['address'],i['dob'],i['phone'],i['password']))             
 
   
 
@@ -116,7 +123,8 @@ while True:
                 elif sub_ch==4:
                     delete_book()
                 elif sub_ch==4:
-                    print(mem)           
+                    view_users()
+                              
 
 
 
