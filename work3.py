@@ -1,5 +1,5 @@
-mem=[]
-bk=[]
+mem=[{'id':101,'email':'a.gmail','name':'asdff','address':'dfgj','dob':'12/12/12','phone':123,'password':'123','books':[]}]
+bk=[{'bk_id':100,'bk_name':'wolf','stock':10,'price':500}]
 def register():
     if len(mem)==0:
         id=101
@@ -19,8 +19,8 @@ def register():
         dob=input("DOB:")
         phone=int(input("Enter Phone no. :"))
         password=input("Password :")
-        mem.append({'id':id,'email':email,'name':name,'address':address,'DOB':dob,'phone':phone,'password':password})
-        print(mem)
+        mem.append({'id':id,'email':email,'name':name,'address':address,'dob':dob,'phone':phone,'password':password,'books':[]})
+        print('REGISTRATION SUCCESSFULL')
 
 def login():
     uname=input("USER NAME :")
@@ -51,10 +51,10 @@ def add_book():
      bk.append({'id':id,'name':name,'stock':stock,'price':price})
      print(bk)
 def view_book():
-    print('{:<10}{:<10}{:<10}{:<10}'.format('id','name','stock','price'))  
+    print('{:<10}{:<10}{:<10}{:<10}'.format('bk_id','bk_name','stock','price'))  
     print('_'*60)
     for i in bk:
-        print('{:<10}{:<10}{:<10}{:<10}'.format(i['id'],i['name'],i['stock'],i['price'])) 
+        print('{:<10}{:<10}{:<10}{:<10}'.format(i['bk_id'],i['bk_name'],i['stock'],i['price'])) 
 def update_book():
     id=int(input("Enter Your ID :"))
     f1=0
@@ -83,11 +83,59 @@ def delete_book():
      if f1==0:
          print("INVALID ID")       
 def view_users():
-     print('{:<10}{:<10}{:<10}{:<10}{:<10}{:<10}{:<10}'.format('id','email','name','address','dob','phone','password'))  
+     print('{:<10}{:<10}{:<10}{:<10}{:<10}{:<10}'.format('id','email','name','address','dob','phone'))  
      print('_'*100)
      for i in mem:
-         print('{:<10}{:<10}{:<10}{:<10}{:<10}{:<10}{:<10}'.format(i['id'],i['email'],i['name'],i['address'],i['dob'],i['phone'],i['password']))             
+         print('{:<10}{:<10}{:<10}{:<10}{:<10}{:<10}'.format(i['id'],i['email'],i['name'],i['address'],i['dob'],i['phone']))
 
+def view_profile(user):
+    # print(user)
+    print('{:<10}{:<20}{:<15}{:<30}{:<10}{:<10}'.format('id','email','name','address','dob','phone','password'))  
+    print('_'*100)
+    print('{:<10}{:<20}{:<15}{:<30}{:<10}{:<10}'.format(user['id'],user['email'],user['name'],user['address'],user['dob'],user['phone'],user['password']))
+
+def borrow_book(user):
+    id = int(input("Enter Book ID: "))
+    f=0        
+                
+    for i in bk:
+     if i['bk_id'] == id:
+                f=1
+                if i['stock']>0:
+                    user['books'].append(i['bk_id'])
+                    i['stock']-=1
+                    print('BOOK BORROWED SUCCESSFULLY')
+
+                else:
+                    print("OUT OF STOCK")
+    if f==0:
+        print('INVALID BOOK ID')  
+def return_book(user):
+    id = int(input("Enter Book ID: "))
+    f=0  
+
+                
+    for i in bk:
+     if i['bk_id'] == id and id in user['books']:
+                f=1
+                i['stock']+=1
+               
+                user['books'].remove(id)
+                   
+                print('BOOK RETURNED SUCCESSFULLY')
+
+               
+    if f==0:
+        print('INVALID BOOK ID')  
+
+# def book_in_hand(user):
+    
+    
+        
+
+                        
+                
+            
   
 
 
@@ -122,13 +170,41 @@ while True:
                     update_book()  
                 elif sub_ch==4:
                     delete_book()
-                elif sub_ch==4:
+                elif sub_ch==5:
                     view_users()
                               
 
 
 
-        # elif f==2:
+        elif f==2:# user login
+            while True:
+                print('''
+1.VIEW PROFILE
+2.VIEW BOOKS
+3.BORROW BOOK
+4.RETURN BOOK
+5.BOOKS IN HAND
+6.EXIT
+''')
+                sub_ch=int(input("ENTER YOUR CHOICE :"))
+                if sub_ch==1:
+                    view_profile(user)
+                elif sub_ch==2:
+                    view_book() 
+                elif sub_ch==3:
+                    borrow_book(user)
+                elif sub_ch==4:
+                    return_book(user)
+                # elif sub_ch==5:
+                #     book_in_hand()     
+                elif sub_ch==6:
+                    break  
+                else :
+                    print("INVALID CHOICE")     
+
+
+            
+            
                     
                     
 
@@ -140,5 +216,7 @@ while True:
             
         
 
-    # elif choice==3:
-    #     break    
+    elif choice==3:
+        break    
+    else:
+        print("INVALID")
