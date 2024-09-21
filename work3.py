@@ -128,16 +128,8 @@ def return_book(user):
     if f==0:
         print('INVALID BOOK ID')  
 
-# def book_in_hand(user):
-    
-    
-        
-
-                        
-                
-            
-  
-
+def book_in_hand(user):
+    print(user['books'])
 
 
 while True:
@@ -195,27 +187,16 @@ while True:
                     borrow_book(user)
                 elif sub_ch==4:
                     return_book(user)
-                # elif sub_ch==5:
-                #     book_in_hand()     
+                elif sub_ch==5:
+                    book_in_hand(user)     
                 elif sub_ch==6:
                     break  
                 else :
-                    print("INVALID CHOICE")     
-
-
-            
-            
-                    
-                    
-
-
+                    print("INVALID CHOICE")           
                   
         # else:
         #     print("Invalid Choice") 
-
-            
-        
-
+   
     elif choice==3:
         break    
     else:
