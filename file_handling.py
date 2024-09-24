@@ -122,6 +122,12 @@ WELCOME
 
     #  print(x*y)
 
+
+
+
+
+
+
 # f=open('Python/demo1.txt','w')
 # a=int(input("Enter a no :"))
 
@@ -129,9 +135,30 @@ WELCOME
 #     # print(i ,'*', a ,'=',i*a)
 #     f.write(str(i)+'*'+str(a)+'='+str(i*a)+'\n')
 
-f=open('Python/demo1.txt','w')
-a=int(input("Enter a no :"))
 
-for i in range(1,6):
+
+
+
+
+
+f=open('Python/demo1.txt','w')
+for i in range(1,11):
+    for a in range(1,6):
+         f.write(str(i)+'*'+str(a)+'='+str(i*a)+'\t')
+    f.write("\n")     
+   
+       
+
     # print(i ,'*', a ,'=',i*a)
-    f.write(str(i)+'*'+str(a)+'='+str(i*a)+'\n')
+   
+    
+
+
+
+
+
+
+
+
+    
+    
