@@ -197,7 +197,7 @@
 # data=python.difference(php)
 # data1=python.difference(java)
 # print(data1)
-<<<<<<< HEAD
+
 
 
 
@@ -222,8 +222,7 @@ items = ['apple', 'banana', 'apple', 'orange', 'banana', 'apple']
 s=set(items)
 print(s)
 
-=======
->>>>>>> 382cb64a599c6c6a801cf01dc49544ce5be1be14
+
 
 
 
