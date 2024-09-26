@@ -231,47 +231,120 @@ Capital : 3
 Small : 17
 '''
 
-f=open('Python/demo.txt','r')
-l=f.readlines()
-f.seek(0)
-letters=0
-capital=0
-word=0
-for i in range(len(l)):
-    a=f.readline().strip()
-    s=a.split(' ')
-    for i in s:
-        if i !=' ':
-            word+=1
+# f=open('Python/demo.txt','r')
+# l=f.readlines()
+# f.seek(0)
+# letters=0
+# capital=0
+# word=0
+# for i in range(len(l)):
+#     a=f.readline().strip()
+#     s=a.split(' ')
+#     for i in s:
+#         if i !=' ':
+#             word+=1
 
-    for i in a:
-        if i !=' ':
-            if i.isupper():
-                capital+=1
-            letters+=1
+#     for i in a:
+#         if i !=' ':
+#             if i.isupper():
+#                 capital+=1
+#             letters+=1
 
-print("letters :",letters)   
-print('Capital :',capital)
-print('Small :',letters-capital)
-print("word :",word) 
-print("No of lines :",len(l))       
-
-
- 
+# print("letters :",letters)   
+# print('Capital :',capital)
+# print('Small :',letters-capital)
+# print("word :",word) 
+# print("No of lines :",len(l))       
 
 
-  
+# f=open('Python/demo.txt','a')
+# f.write('\nappend')
+
+# import os
+
+# os.remove('Python/demo2.txt')
+
+# if os.path.exists('Python/demo2.txt'):
+#     print('File Found')
+# else:
+#     print('File Not Found')    
+
+
+# import os
+# os.mkdir('sample')   # to create folder
+   
+# os.rmdir('sample')    # to delete folder
       
 
-   
-    
+
+# contains error
+
+# print("WELCOME")
+# a='welcome'
+# b=20
+# try:
+#     print(a+b)
+# except:
+#     print("an error")
+# else:
+#     print("else")
+# finally:
+#     print("pgm ends")
+# print("SAMPLE PRINT")                
+
+'''
+WELCOME
+an error
+pgm ends
+SAMPLE PRINT
+'''   
 
 
 
+# no error
+
+# print("WELCOME")
+# a='welcome'
+# b='20'
+# try:
+#     print(a+b)
+# except:
+#     print("an error")
+# else:
+#     print("else")
+# finally:
+#     print("pgm ends")
+# print("SAMPLE PRINT") 
+
+'''
+WELCOME
+welcome20
+else 
+pgm ends
+SAMPLE PRINT
+'''
 
 
 
+# l=[1,2,3,4,5,'a',6,7,8]
+# sum=0
+# for i in l:
+#        try:
+#          sum+=i
+#        except:
+#             # print('error') 
+#              pass
+# print('sum:',sum) 
 
+'''36'''
 
+l=[1,2,3,4,5,'a',6,7,8]
+sum=0
+for i in l:
+         if type(i)==int or type(i)==float:
+            sum+=i
+print('sum:',sum) 
+
+'''sum: 36'''
     
     

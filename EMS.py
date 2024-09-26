@@ -14,7 +14,13 @@ while True:
 7.View Task
 8.Exit                                        
       ''')
-    choice=int(input("Enter Your Choice :"))
+    while True:
+      try: 
+          choice=int(input("Enter Your Choice :"))
+          break
+      except:
+          print("Enter Correct Data")
+        #   pass
     if choice==1:
         id= int(input("Enter id :"))
         name=input("Enter Name :")
