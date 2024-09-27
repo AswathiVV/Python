@@ -338,13 +338,14 @@ SAMPLE PRINT
 
 '''36'''
 
-l=[1,2,3,4,5,'a',6,7,8]
-sum=0
-for i in l:
-         if type(i)==int or type(i)==float:
-            sum+=i
-print('sum:',sum) 
+# l=[1,2,3,4,5,'a',6,7,8]
+# sum=0
+# for i in l:
+#          if type(i)==int or type(i)==float:
+#             sum+=i
+# print('sum:',sum) 
 
 '''sum: 36'''
+
     
     
