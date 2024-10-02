@@ -229,23 +229,142 @@ display : 500
 # anu.bike()
 
 
-class BOD:
-    def final_reports(self):
-        print('final reports')
-    def plans_and_policies(self):
-        print('plans & policies')
-class production_dep(BOD):
-    def employees(self):
-        print('emp')    
-class sales_dep(BOD) :
-    def employees(self):
-        print('emp') 
+# class BOD:
+#     def final_reports(self):
+#         print('final reports')
+#     def plans_and_policies(self):
+#         print('plans & policies')
+# class production_dep(BOD):
+#     def employees(self):
+#         print('emp')    
+# class sales_dep(BOD) :
+#     def employees(self):
+#         print('emp') 
 
 
-p=production_dep()
-p.final_reports()
+# p=production_dep()
+# p.final_reports()
 
-s=sales_dep()
-p.final_reports
+# s=sales_dep()
+# s.final_reports
 
    
+# class synnefo:
+#     def reports(self):
+#         print("Reports")
+#     def admission(self):
+#         print("Asmission") 
+#     def accounts(self):
+#         print("Accounts")       
+# class teachers(synnefo):
+#     def lab(self):
+#         print("lab")
+#     def attendance(self):
+#         print("Attendance")
+#     def sylabus(self):
+#         print("Sylabus")       
+
+# class non_teaching_staff(synnefo):
+#     def accounts(self):
+#         print("Accounts")
+#     def reports(self):
+#         print("Reports")  
+
+# class students(teachers):
+#     def lab(self):
+#         print("Lab")
+#     def task(self):
+#         print("Task")     
+
+# sam=teachers()
+# sam.reports()
+# sam.sylabus()
+
+# sana=students()
+# sana.sylabus()
+# sana.lab()
+
+# miyo=non_teaching_staff()
+# miyo.accounts()
+# miyo.admission()
+
+
+
+
+                               # godown
+                          
+        # godown_supervisor                # supplier
+
+#  stock_inflow      stock_outflow            # products
+ 
+
+
+# class godown:
+#     def stock_registration(self):
+#         print("Stock Registration")
+#     def supplier_contact_information(self) :
+#         print("Contact Information Of Supplier")   
+#     def stock_reports(self):
+#         print("Stock Reports")
+#     def stock_status(self):
+#         print("Stock Status")
+#     def fees(self):
+#         print("Fees")  
+# class supplier(godown):
+#     def product_details(self):
+#         print("Product Details")
+#     def product_id(self):
+#         print("Product ID")
+#     def product_supply_details(self):
+#         print("Product Supply Reports") 
+# class products(supplier):
+#     def product_details(self):
+#         print("Product Details")
+# class godown_supervisor(godown):
+#     def stock_details(self):
+#         print("Stock Details")
+#     def bills(self):
+#         print("Bills")
+#     def stock_status_reports(self):
+#         print("Stock Status Reports")
+# class stock_inflow(godown_supervisor):
+#     def stock_inflow_details(self):
+#         print("Stock Details")
+# class stock_outflow_details(godown_supervisor):
+#     def stock_outflow_details(self):
+#         print("Stock Outflow Details")
+
+
+
+# pdt=products()
+# pdt.product_details()
+# pdt.product_supply_details()
+
+# sup=supplier()
+# sup.stock_registration()
+# sup.product_details
+
+# win=godown_supervisor()
+# win.stock_status()
+# win.bills
+
+# inf=stock_inflow()
+# inf.stock_inflow_details()
+# inf.stock_status_reports()
+
+# out=stock_outflow_details()
+# out.stock_outflow_details()
+# out.stock_status_reports()
+
+
+                            
+# class bank:
+#     def __init__(self):
+#         print("ADD BANK DETAILS")
+# class user(bank):
+#     def __init__(self):
+#         print("ADD USER DETAILS")    
+
+# sbi=bank() 
+# u=user()               
+  
