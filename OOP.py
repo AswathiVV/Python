@@ -368,3 +368,82 @@ display : 500
 # sbi=bank() 
 # u=user()               
   
+
+# class school:
+#     def notes(self):
+#         print("Notes")
+
+# class std(school):
+#     def notes(self):
+#         print("notes in std")
+#         super().notes() 
+
+# amal=std()
+# amal.notes()     
+
+'''
+notes in std
+Notes
+'''          
+
+# class school:
+#     def notes(self,sub):
+#         print("Notes",sub)
+
+# class std(school):
+#     def notes(self):
+#         print("notes in std")
+#         super().notes("py") 
+
+# amal=std()
+# amal.notes()  
+'''
+notes in std
+Notes py
+''' 
+# sub is a parameter    
+
+
+# class school:
+#     def notes(self,sub):
+#         print("Notes",sub)
+# class std(school):
+#     def notes(self, sub):
+#         print("notes in std")
+#         super().notes(sub)  
+
+# amal=std()
+# amal.notes("py")  
+'''
+notes in std
+Notes py''' 
+
+
+
+# abstract method
+
+# from abc import ABC,abstractmethod
+
+# class syn(ABC):
+#     @abstractmethod
+#     def reg(self):
+#         pass
+#     def python(self):
+#         print("python")
+#     def php(self):
+#         print("php")
+# class staff(syn):
+#     def reg(self):
+#         print("staff data")
+#     def notes(self):
+#         print("notes")
+# class std(syn):
+#     def reg(self):
+#         print("std data")
+#     def exam(self):
+#         print("exam")   
+
+# staff1=staff()
+# staff1.reg()
+# manu=std()
+# manu.reg()
