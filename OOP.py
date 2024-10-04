@@ -447,3 +447,4 @@ Notes py'''
 # staff1.reg()
 # manu=std()
 # manu.reg()
+
