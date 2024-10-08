@@ -13,7 +13,8 @@ while True:
 2.UPDATE
 3.VIEW
 4.DELETE
-5.SEARCH                                        
+5.SEARCH  
+6.EXIT                                                
 ''')
     choice=int(input("ENTER YOUR CHOICE :"))
     if choice==1:
@@ -78,6 +79,10 @@ while True:
         data=con.execute("select * from emp where id=? ",(id,))  
         for i in data:
             print(i)
+    elif sub_ch==6:
+                break   
+    else:
+         print("INVALID CHOICE")     
            
 
             
